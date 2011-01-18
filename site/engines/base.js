@@ -7,6 +7,20 @@
  *     et al directly and not through go.infinse.com
  */
  
+/*	Ecosia
+	----------------------------------------------------- */
+
+eng.ecosia = {
+	pageTitle: "Ecosia",
+	logo: "ecosia.png",
+	places: {
+		'Web'    : ["http://ecosia.org/search.php?q=%query%&hl=de",		false],
+		'Bilder' : ["http://ecosia.org/images.php?q=%query%&hl=de",		false],
+		'Maps'   : ["http://ecosia.org/maps.php?q=%query%",			false],
+                'News'   : ["http://ecosia.org/news.php?q=%query%", 			false]
+	}
+};
+
 /*	GOOGLE
 	----------------------------------------------------- */
 
@@ -14,12 +28,12 @@ eng.google = {
 	pageTitle: "Google",
 	logo: "google-white.png",
 	places: {
-		'Web'    : ["http://www.google.com/search?q=%query%&hl=en",		false],
-		'Images' : ["http://images.google.com/images?q=%query%&hl=en",	false],
-		'Maps'   : ["http://maps.google.com/maps?q=%query%",			false]
+		'Web'    : ["http://www.google.de/search?q=%query%&hl=de",		false],
+		'Bilder' : ["http://images.google.de/images?q=%query%&hl=de",		false],
+		'Maps'   : ["http://maps.google.de/maps?q=%query%",			false],
+                'News'   : ["http://news.google.de/news/search?q=%query%", 		false]
 	}
 };
-
 
 /*	WIKIPEDIA
 	----------------------------------------------------- */
@@ -28,13 +42,13 @@ eng.wikipedia = {
 	pageTitle: "Wikipedia",
 	logo: "wikipedia-white.png",
 	places: {
-		'Go to Article' : ["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&go=Go", false],
-		'Search'        : ["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&fulltext=Search", false],
+		'Artikelsuche' : ["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&go=Go", 		false],
+		'Suchergebnisse'        : ["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&fulltext=Search", 	false],
 	},
 	languages: {
-		'EN': 'en',
 		'DE': 'de',
-		'FR': 'fr',
+		'EN': 'en',
+                'FR': 'fr',
 		'IT': 'it',
 		'ES': 'es'
 	}
@@ -48,18 +62,18 @@ eng.youtube = {
 	pageTitle: "YouTube",
 	logo: "youtube.png",
 	places: {
-		'Videos' : ["http://www.youtube.com/results?search_query=%query%", false]
+		'Videos' : ["http://www.youtube.com/results?search_query=%query%", 	false]
 	},
 };
 
 
 /*	TWITTER
-	----------------------------------------------------- */
+	----------------------------------------------------- 
 
 eng.twitter = {
 	pageTitle: "Twitter",
 	logo: "twitter.png",
 	places: {
-		'Search Twitter' : ["http://twitter.com/search?q=%query%", false]
+		'Twitter durchsuchen' : ["http://twitter.com/search?q=%query%", false]
 	}
-};
+};*/
